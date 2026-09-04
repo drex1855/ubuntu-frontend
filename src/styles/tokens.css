@@ -1,0 +1,68 @@
+:root {
+  /* Superficies — sala de control oscura */
+  --bg-app: #0a0b10;
+  --bg-sidebar: #0d0f16;
+  --bg-surface: #13151d;
+  --bg-surface-raised: #191c26;
+  --bg-surface-hover: #1f2330;
+  --border-subtle: #262a38;
+  --border-strong: #343a4d;
+
+  /* Texto */
+  --text-primary: #f2f3f7;
+  --text-secondary: #a8adbd;
+  --text-muted: #6b7186;
+  --text-on-accent: #100a14;
+
+  /* Acento primario: magenta/rosa "en vivo" */
+  --accent: #ff2e8c;
+  --accent-strong: #ff5aa8;
+  --accent-soft: rgba(255, 46, 140, 0.14);
+  --accent-border: rgba(255, 46, 140, 0.35);
+
+  /* Acento secundario: cian, estados positivos/activo */
+  --success: #21e0c4;
+  --success-soft: rgba(33, 224, 196, 0.14);
+  --success-border: rgba(33, 224, 196, 0.35);
+
+  /* Advertencia: stock bajo / checklist "Malo" */
+  --warning: #ffb020;
+  --warning-soft: rgba(255, 176, 32, 0.14);
+  --warning-border: rgba(255, 176, 32, 0.35);
+
+  /* Peligro: errores, desactivar, eliminar */
+  --danger: #ff4d5e;
+  --danger-soft: rgba(255, 77, 94, 0.14);
+  --danger-border: rgba(255, 77, 94, 0.35);
+
+  /* Info neutro */
+  --info: #6ea8fe;
+  --info-soft: rgba(110, 168, 254, 0.14);
+
+  /* Tipografía */
+  --font-sans:
+    system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  /* Espaciado */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  /* Radios y sombras */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-glow-accent: 0 0 0 1px var(--accent-border), 0 0 24px -8px var(--accent);
+
+  --sidebar-width: 248px;
+  --topbar-height: 64px;
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+}

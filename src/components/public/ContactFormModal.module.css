@@ -1,0 +1,120 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(6, 10, 10, 0.72);
+}
+
+.dialog {
+  width: 100%;
+  max-width: 420px;
+  background: var(--pub-surface, #202626);
+  border: 1px solid var(--pub-border, rgba(109, 125, 125, 0.45));
+  border-radius: 20px;
+  padding: 28px;
+  color: var(--pub-text, #fff);
+  font-family: var(--pub-body-font, "Nunito", sans-serif);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: var(--pub-heading-font, "Kanit", sans-serif);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: var(--pub-muted, #6d7d7d);
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px;
+}
+
+.closeButton:hover {
+  color: var(--pub-text, #fff);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--pub-muted, #6d7d7d);
+}
+
+.field input {
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--pub-text, #fff);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--pub-border, rgba(109, 125, 125, 0.45));
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: var(--pub-accent, #00a884);
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--pub-muted, #6d7d7d);
+  line-height: 1.5;
+}
+
+.consent input {
+  margin-top: 3px;
+}
+
+.consent a {
+  color: var(--pub-accent, #00a884);
+}
+
+.error {
+  color: #ff8a80;
+  font-size: 13px;
+  margin: 0;
+}
+
+.submitButton {
+  margin-top: 4px;
+  border: none;
+  border-radius: 100px;
+  padding: 14px 24px;
+  background: var(--pub-accent, #00a884);
+  color: #06231e;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  filter: brightness(1.08);
+}

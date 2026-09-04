@@ -1,0 +1,48 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#20302c"/>
+      <stop offset="100%" stop-color="#101414"/>
+    </linearGradient>
+    <linearGradient id="g1glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00a884" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00a884" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00a884" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#g1bg)"/>
+
+  <!-- back wall LED strip -->
+  <rect x="30" y="70" width="440" height="6" fill="url(#g1glow)"/>
+  <rect x="30" y="70" width="440" height="2" fill="#ffffff" opacity="0.6"/>
+
+  <!-- curtains -->
+  <g opacity="0.5" stroke="#6d7d7d" stroke-width="2" fill="none">
+    <path d="M40 90 Q55 220 40 420"/>
+    <path d="M70 90 Q85 220 70 420"/>
+    <path d="M430 90 Q445 220 430 420"/>
+    <path d="M460 90 Q475 220 460 420"/>
+  </g>
+
+  <!-- bed / lounge platform -->
+  <rect x="90" y="330" width="320" height="90" rx="14" fill="#1c2222" stroke="#3a4444" stroke-width="2"/>
+  <rect x="105" y="300" width="80" height="45" rx="10" fill="#242c2c" stroke="#4a5555" stroke-width="2"/>
+  <rect x="200" y="300" width="80" height="45" rx="10" fill="#242c2c" stroke="#4a5555" stroke-width="2"/>
+  <rect x="295" y="300" width="80" height="45" rx="10" fill="#242c2c" stroke="#4a5555" stroke-width="2"/>
+
+  <!-- tripod + camera facing the bed -->
+  <g transform="translate(250,215)">
+    <line x1="-40" y1="70" x2="0" y2="10" stroke="#3a4242" stroke-width="4"/>
+    <line x1="40" y1="70" x2="0" y2="10" stroke="#3a4242" stroke-width="4"/>
+    <line x1="0" y1="70" x2="0" y2="10" stroke="#3a4242" stroke-width="4"/>
+    <circle r="34" fill="none" stroke="#ffffff" stroke-width="6" opacity="0.9"/>
+    <circle r="34" fill="none" stroke="#0f1212" stroke-width="6" stroke-dasharray="1 9"/>
+    <circle r="14" fill="#0a0d0d" stroke="#00a884" stroke-width="3"/>
+    <circle r="5" fill="#00a884"/>
+  </g>
+
+  <!-- floor accent -->
+  <rect x="0" y="420" width="500" height="80" fill="#0c0f0f"/>
+  <circle cx="90" cy="450" r="3" fill="#00a884" opacity="0.6"/>
+  <circle cx="420" cy="460" r="4" fill="#ffffff" opacity="0.3"/>
+</svg>

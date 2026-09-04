@@ -1,0 +1,32 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ctaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#123028"/>
+      <stop offset="55%" stop-color="#161c1c"/>
+      <stop offset="100%" stop-color="#0e1111"/>
+    </linearGradient>
+    <radialGradient id="ctaGlowL" cx="15%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#00a884" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#00a884" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ctaGlowR" cx="85%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#00a884" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00a884" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#ctaBg)"/>
+  <rect width="1200" height="500" fill="url(#ctaGlowL)"/>
+  <rect width="1200" height="500" fill="url(#ctaGlowR)"/>
+
+  <circle cx="180" cy="150" r="120" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.12"/>
+  <circle cx="180" cy="150" r="160" fill="none" stroke="#00a884" stroke-width="2" opacity="0.18"/>
+  <circle cx="1020" cy="360" r="140" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.1"/>
+  <circle cx="1020" cy="360" r="180" fill="none" stroke="#00a884" stroke-width="2" opacity="0.15"/>
+
+  <g fill="#ffffff" opacity="0.5">
+    <circle cx="620" cy="80" r="3"/>
+    <circle cx="700" cy="420" r="4"/>
+    <circle cx="430" cy="420" r="2.5"/>
+    <circle cx="900" cy="120" r="3"/>
+  </g>
+</svg>

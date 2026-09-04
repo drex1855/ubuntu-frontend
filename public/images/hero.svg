@@ -1,0 +1,58 @@
+<svg width="400" height="500" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b2020"/>
+      <stop offset="100%" stop-color="#0f1212"/>
+    </linearGradient>
+    <radialGradient id="ringGlow" cx="50%" cy="38%" r="45%">
+      <stop offset="0%" stop-color="#00a884" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00a884" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#00a884"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="500" fill="url(#heroBg)"/>
+  <circle cx="200" cy="190" r="170" fill="url(#ringGlow)"/>
+
+  <!-- bokeh -->
+  <circle cx="70" cy="80" r="4" fill="#00a884" opacity="0.5"/>
+  <circle cx="340" cy="120" r="3" fill="#ffffff" opacity="0.3"/>
+  <circle cx="60" cy="380" r="5" fill="#ffffff" opacity="0.2"/>
+  <circle cx="350" cy="410" r="3.5" fill="#00a884" opacity="0.4"/>
+
+  <!-- stand -->
+  <line x1="200" y1="270" x2="200" y2="430" stroke="#3a4242" stroke-width="6"/>
+  <line x1="150" y1="430" x2="250" y2="430" stroke="#3a4242" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- ring light -->
+  <circle cx="200" cy="190" r="115" fill="none" stroke="url(#ringStroke)" stroke-width="10"/>
+  <circle cx="200" cy="190" r="115" fill="none" stroke="#0f1212" stroke-width="10" stroke-dasharray="2 26"/>
+
+  <!-- camera -->
+  <g transform="translate(200,190)">
+    <rect x="-38" y="-30" width="76" height="60" rx="10" fill="#141818" stroke="#ffffff" stroke-opacity="0.7" stroke-width="2"/>
+    <circle r="20" fill="#0a0d0d" stroke="#00a884" stroke-width="3"/>
+    <circle r="7" fill="#00a884"/>
+    <circle cx="26" cy="-16" r="4" fill="#ff4d5e"/>
+  </g>
+
+  <!-- desk -->
+  <rect x="0" y="430" width="400" height="70" fill="#171b1b"/>
+  <rect x="0" y="428" width="400" height="4" fill="#00a884" opacity="0.5"/>
+
+  <!-- laptop -->
+  <g transform="translate(70,405)">
+    <rect x="0" y="0" width="70" height="46" rx="4" fill="#1f2626" stroke="#6d7d7d" stroke-width="2"/>
+    <rect x="-6" y="46" width="82" height="8" rx="3" fill="#262d2d"/>
+  </g>
+
+  <!-- plant -->
+  <g transform="translate(320,392)">
+    <rect x="-14" y="38" width="28" height="24" rx="4" fill="#262d2d"/>
+    <path d="M0 38 C -18 20 -14 -6 0 -14 C 14 -6 18 20 0 38 Z" fill="none" stroke="#00a884" stroke-width="2.5" opacity="0.8"/>
+    <path d="M0 30 C -10 16 -8 0 0 -4" fill="none" stroke="#00a884" stroke-width="2" opacity="0.6"/>
+  </g>
+</svg>

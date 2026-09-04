@@ -1,0 +1,28 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g2glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#00a884" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00a884" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="#141818"/>
+  <circle cx="200" cy="135" r="140" fill="url(#g2glow)"/>
+
+  <line x1="200" y1="220" x2="200" y2="280" stroke="#3a4242" stroke-width="6"/>
+  <line x1="160" y1="280" x2="240" y2="280" stroke="#3a4242" stroke-width="8" stroke-linecap="round"/>
+
+  <circle cx="200" cy="135" r="95" fill="none" stroke="#ffffff" stroke-width="9"/>
+  <circle cx="200" cy="135" r="95" fill="none" stroke="#0f1212" stroke-width="9" stroke-dasharray="1 15"/>
+  <circle cx="200" cy="135" r="95" fill="none" stroke="#00a884" stroke-width="2" opacity="0.7"/>
+
+  <g transform="translate(200,135)">
+    <rect x="-34" y="-26" width="68" height="52" rx="9" fill="#1a1f1f" stroke="#ffffff" stroke-opacity="0.7" stroke-width="2"/>
+    <circle r="17" fill="#0a0d0d" stroke="#00a884" stroke-width="3"/>
+    <circle r="6" fill="#00a884"/>
+    <circle cx="22" cy="-14" r="3.5" fill="#ff4d5e"/>
+  </g>
+
+  <circle cx="60" cy="60" r="3" fill="#ffffff" opacity="0.3"/>
+  <circle cx="345" cy="70" r="4" fill="#00a884" opacity="0.5"/>
+  <circle cx="330" cy="230" r="3" fill="#ffffff" opacity="0.25"/>
+</svg>
