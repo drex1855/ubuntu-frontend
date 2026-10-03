@@ -5,7 +5,6 @@ import { useAuth } from "./AuthContext";
 
 interface RequireAuthProps {
   children: ReactNode;
-  /** Si se indica, solo cuentas con alguno de estos roles pueden ver la ruta. */
   requiredRole?: AccountRole | AccountRole[];
 }
 

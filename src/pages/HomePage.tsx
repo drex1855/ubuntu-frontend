@@ -41,7 +41,6 @@ const GALLERY_IMAGES = [
   "/images/galeria-5.svg",
 ];
 
-// Ajusta estos numeros cuando tengas las cifras reales del estudio.
 const STATS = [
   { value: "150+", label: "Modelos han confiado" },
   { value: "80K+", label: "Metas cumplidas" },

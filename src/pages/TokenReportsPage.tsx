@@ -30,8 +30,6 @@ function formatTokenRate(value: number): string {
 
 type SiteModalState = { mode: "create" } | { mode: "edit"; site: SiteDto } | null;
 
-/** CSV con separador ";" y coma decimal -- es lo que Excel en español abre bien de un
- * doble clic sin pasar por el asistente de importación. */
 function exportReportsToCsv(reports: TokenReportDto[]) {
   const headers = ["Modelo", "Sitio", "Periodo", "Tokens", "Valor (USD)", "Registrado"];
   const escapeCell = (value: string) => `"${value.replace(/"/g, '""')}"`;

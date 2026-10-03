@@ -15,12 +15,6 @@ import { formatDateTime, formatMinutesAsTime, parseTimeToMinutes } from "../util
 import shared from "./shared.module.css";
 import styles from "./StorePage.module.css";
 
-/**
- * El staff (Admin/Monitor) anota los movimientos de horas de una modelo elegida de la
- * lista. Reemplaza la calculadora anterior que solo vivia en el navegador: ahora cada
- * movimiento se guarda en el servidor y la modelo afectada lo ve en su propio perfil
- * (ver ProfilePage), de forma personal y de solo lectura.
- */
 export function HoursPage() {
   const { data: models } = useApi(getModelAccounts, []);
   const { showSuccess, showError } = useToast();

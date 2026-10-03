@@ -33,7 +33,6 @@ interface RequestOptions {
   method?: "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
   body?: unknown;
   query?: Record<string, QueryValue>;
-  /** El login no debe mandar el header Authorization todavía. */
   skipAuth?: boolean;
 }
 
@@ -101,8 +100,6 @@ export const apiClient = {
   delete: <T>(path: string) => request<T>(path, { method: "DELETE" }),
 };
 
-/** Sube un archivo (multipart/form-data) -- no pasa por `request()` porque el body no es
- * JSON: el navegador arma el Content-Type con el boundary correcto automáticamente. */
 export async function uploadFile<T>(path: string, file: File): Promise<T> {
   const session = readSession();
   const headers: Record<string, string> = { Accept: "application/json" };
@@ -131,8 +128,6 @@ export async function uploadFile<T>(path: string, file: File): Promise<T> {
   return payload.data as T;
 }
 
-/** Descarga un archivo protegido (requiere sesión) y devuelve una URL de objeto local
- * para usar en <img src>; el llamador debe revocarla con URL.revokeObjectURL al terminar. */
 export async function fetchAuthenticatedBlobUrl(path: string): Promise<string> {
   const session = readSession();
   const headers: Record<string, string> = {};

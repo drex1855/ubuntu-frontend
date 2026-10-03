@@ -8,7 +8,6 @@ interface UseApiState<T> {
   reload: () => void;
 }
 
-/** Ejecuta `fetcher` al montar (y cuando cambien las `deps`), exponiendo loading/error/data. */
 export function useApi<T>(fetcher: () => Promise<T>, deps: unknown[] = []): UseApiState<T> {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
@@ -35,7 +34,7 @@ export function useApi<T>(fetcher: () => Promise<T>, deps: unknown[] = []): UseA
     return () => {
       cancelled = true;
     };
-  }, deps); // eslint-disable-line react-hooks/exhaustive-deps
+  }, deps);
 
   useEffect(() => load(), [load, reloadToken]);
 

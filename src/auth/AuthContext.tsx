@@ -44,7 +44,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       writeSession(nextSession);
       setSession(nextSession);
     } catch (error) {
-      // Mensaje genérico: no distinguimos "usuario no existe" de "contraseña incorrecta".
       if (error instanceof ApiError && error.status === 400) {
         throw new ApiError("Correo o contraseña inválidos.", error.status);
       }
