@@ -6,7 +6,6 @@ import styles from "./ContactFormModal.module.css";
 
 interface ContactFormModalProps {
   onClose: () => void;
-  /** Arma la URL de wa.me con un mensaje personalizado usando el nombre ingresado. */
   buildWhatsAppUrl: (fullName: string) => string;
 }
 
@@ -34,10 +33,6 @@ export function ContactFormModal({ onClose, buildWhatsAppUrl }: ContactFormModal
       return;
     }
 
-    // Abrimos WhatsApp ya mismo, de forma sincrónica dentro del gesto de envío del
-    // formulario: si esperamos a que responda el backend antes de abrir la ventana,
-    // varios navegadores (Safari sobre todo) la bloquean como popup no solicitado.
-    // Así un hipo del backend nunca le impide a la persona escribirle al estudio.
     window.open(buildWhatsAppUrl(trimmedName), "_blank", "noopener,noreferrer");
     onClose();
 

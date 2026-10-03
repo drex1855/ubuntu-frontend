@@ -37,9 +37,6 @@
   background: var(--bg-surface-hover);
 }
 
-/* En movil cada fila se convierte en una tarjeta de pares etiqueta/valor -- se recorre
-   bajando con el dedo, sin scroll horizontal. La etiqueta sale del data-label que cada
-   <td> ya trae (mismo texto que su <th> correspondiente). */
 @media (max-width: 640px) {
   .wrapper {
     overflow-x: visible;

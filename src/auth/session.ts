@@ -1,11 +1,3 @@
-// Almacenamiento de sesión de bajo nivel, sin dependencias de React, para que tanto el
-// AuthContext como el cliente HTTP (api/client.ts) puedan leer/limpiar el token sin
-// importarse entre sí (evita ciclos de import).
-//
-// Se usa sessionStorage (no localStorage) a propósito: la sesión desaparece al cerrar la
-// pestaña/navegador, acotando la ventana de exposición del JWT frente a persistencia
-// indefinida. El token nunca se coloca en la URL ni en query strings.
-
 import type { AccountRole } from "../api/types";
 
 const STORAGE_KEY = "webcam-studio.session";
@@ -44,8 +36,6 @@ export function clearSession(): void {
   sessionStorage.removeItem(STORAGE_KEY);
 }
 
-/** Evento disparado por el cliente HTTP cuando el backend responde 401, para que el
- * AuthContext pueda reaccionar (limpiar sesión + redirigir) sin acoplarse a fetch. */
 export const UNAUTHORIZED_EVENT = "webcam-studio:unauthorized";
 
 export function notifyUnauthorized(): void {

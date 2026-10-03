@@ -91,8 +91,6 @@
   }
 }
 
-/* ---- Botones ---- */
-
 .pillButton {
   display: inline-flex;
   align-items: center;
@@ -135,8 +133,6 @@
   filter: brightness(1.08);
   color: #06231e;
 }
-
-/* ---- Slots de imagen (para que reemplaces por tus fotos) ---- */
 
 .imageSlot {
   position: relative;
@@ -232,8 +228,6 @@
   }
 }
 
-/* ---- Secciones genéricas ---- */
-
 .section {
   padding: 72px 0;
   border-top: 1px solid var(--pub-border);
@@ -261,8 +255,6 @@
   margin-top: 16px;
 }
 
-/* ---- Galería / Instalaciones ---- */
-
 .galleryGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -289,8 +281,6 @@
   }
 }
 
-/* ---- Acerca de nosotros ---- */
-
 .aboutGrid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -310,8 +300,6 @@
     order: -1;
   }
 }
-
-/* ---- Contadores ---- */
 
 .statsRow {
   display: grid;
@@ -342,7 +330,6 @@
   }
 }
 
-/* ---- CTA grande ---- */
 
 .ctaBanner {
   position: relative;
@@ -373,7 +360,6 @@
   margin: 0 auto 28px;
 }
 
-/* ---- Equipo ---- */
 
 .teamGrid {
   display: grid;
@@ -433,7 +419,6 @@
   }
 }
 
-/* ---- FAQ ---- */
 
 .faqList {
   display: flex;
@@ -459,7 +444,6 @@
   margin-bottom: 20px;
 }
 
-/* ---- Footer ---- */
 
 .footer {
   border-top: 1px solid var(--pub-border);
@@ -511,7 +495,6 @@
   color: var(--pub-text);
 }
 
-/* ---- Burbuja flotante de WhatsApp ---- */
 
 .floatingChat {
   position: fixed;

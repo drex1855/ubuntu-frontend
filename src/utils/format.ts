@@ -40,7 +40,6 @@ export function toDateInputValue(date: Date): string {
   return date.toISOString().slice(0, 10);
 }
 
-/** Convierte "6:47" o "-6:47" a minutos totales (407, o -407). Null si el formato no es válido. */
 export function parseTimeToMinutes(value: string): number | null {
   const match = value.trim().match(/^(-)?(\d+):([0-5]?\d)$/);
   if (!match) return null;
@@ -51,7 +50,6 @@ export function parseTimeToMinutes(value: string): number | null {
   return sign * (hours * 60 + minutes);
 }
 
-/** Convierte minutos totales de vuelta a formato "H:MM" (o "-H:MM" si es negativo). */
 export function formatMinutesAsTime(totalMinutes: number): string {
   const sign = totalMinutes < 0 ? "-" : "";
   const abs = Math.abs(totalMinutes);

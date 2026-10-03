@@ -1,6 +1,3 @@
-// Tipos espejo de los DTOs y enums del backend (WebcamStudio.Application / Domain).
-// Los enums viajan como string por JsonStringEnumConverter (ver Program.cs del backend).
-
 export type QueryValue = string | number | boolean | undefined | null;
 
 export type AccountRole = "Admin" | "Modelo" | "Monitor";
@@ -140,7 +137,7 @@ export interface UpdateSiteRequest {
 export interface CreateTokenReportRequest {
   modelAccountId: string;
   siteId: string;
-  period: string; // yyyy-MM-dd
+  period: string;
   tokensAmount: number;
 }
 
@@ -251,8 +248,6 @@ export interface ChecklistRunDto {
   maintenanceRequests: MaintenanceRequestDto[];
 }
 
-// ---- Contactos (quien escribe al WhatsApp del estudio desde la pagina publica) ----
-
 export interface TagDto {
   id: string;
   name: string;
@@ -316,8 +311,6 @@ export interface MassEmailResultDto {
   skippedNoEmail: number;
 }
 
-// ---- Préstamos ----
-
 export interface LoanRequestDto {
   id: string;
   requestedByAccountId: string;
@@ -342,8 +335,6 @@ export interface LoanRequestSearchParams {
   status?: LoanRequestStatus;
   [key: string]: QueryValue;
 }
-
-// ---- Multas ----
 
 export type FineStatus = "PendientePorCobrar" | "Pagada" | "Cancelada";
 
@@ -373,8 +364,6 @@ export interface FineSearchParams {
   status?: FineStatus;
   [key: string]: QueryValue;
 }
-
-// ---- Horas ----
 
 export interface HourEntryDto {
   id: string;
